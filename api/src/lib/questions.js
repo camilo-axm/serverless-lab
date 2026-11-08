@@ -142,6 +142,20 @@ const questions = [
     answer: 1,
     explanation:
       'Static Web Apps crea un entorno de staging por Pull Request (el plan Free permite unos pocos simultáneos). Al cerrar el PR, el job "close" lo elimina.'
+  },
+  {
+    id: 'q11',
+    concept: 'Entornos de preview en Azure SWA',
+    text: '¿Cómo se identifica o se accede a una versión de prueba (*preview*) generada automáticamente por un Pull Request en Azure Static Web Apps?',
+    options: [
+      'Se debe configurar manualmente un servidor Nginx en otra máquina virtual',
+      'El bot de Azure publica un comentario automático en el Pull Request con una URL única de vista previa',
+      'Se reemplaza automáticamente la URL de producción principal sin previo aviso',
+      'Solo se puede visualizar descargando los logs de GitHub Actions en formato ZIP'
+    ],
+    answer: 1,
+    explanation:
+      'Azure Static Web Apps genera un entorno efímero por cada PR abierto y el flujo de integración continua notifica su enlace único directamente en los comentarios del Pull Request.'
   }
 ];
 
