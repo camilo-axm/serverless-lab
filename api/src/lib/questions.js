@@ -153,7 +153,7 @@ const questions = [
       'Se reemplaza automáticamente la URL de producción principal sin previo aviso',
       'Solo se puede visualizar descargando los logs de GitHub Actions en formato ZIP'
     ],
-    answer: 9,
+    answer: 1,
     explanation:
       'Azure Static Web Apps genera un entorno efímero por cada PR abierto y el flujo de integración continua notifica su enlace único directamente en los comentarios del Pull Request.'
   }
